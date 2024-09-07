@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <title>Physics Calculator</title>
+   <style>
+       .main{
+           padding: 20% 0;
+       }
+   </style>
+       
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Physics Calculator</h1>
+        </div>
+        <ul>
+            <li class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="first">
+    <div class="main">
+        CALCULATE MOMENT OF INERTIA OF:
+        <details>
+            <summary>Solid Sphere</summary>
+            <details>
+                <summary>Perpendicular to the diameter</summary>
+                Enter the mass<input type="text" id="one"> <br>
+                Enter the distance from axis<input type="text" id="Two">
+                <button onclick="result()">result</button>
+                <div id="text1"></div>
+            </details>
+            <details>
+                <summary>Tangentially</summary>
+                Enter the mass<input type="text" id="one1"> <br>
+                Enter the distance from axis<input type="text" id="Two1">
+                <button onclick="result1()">result</button>
+                <div id="text2"></div>
+            </details>
+        </details>
+        <details>
+            <summary>Ring</summary>
+            <details>
+                <summary>About Central Axis</summary>
+                Enter the mass<input type="text" id="one2"> <br>
+                Enter the distance from axis<input type="text" id="Two2">
+                <button onclick="result2()">result</button>
+                <div id="text3"></div>
+
+            </details>
+            <details>
+                <summary>About Any Diameter</summary>
+                Enter the mass<input type="text" id="one3"> <br>
+                Enter the distance from axis<input type="text" id="Two3">
+                <button onclick="result3()">result</button>
+                <div id="text4"></div>
+
+            </details>
+            <details>
+                <summary>About a tangent in its plane</summary>
+                Enter the mass<input type="text" id="one4"> <br>
+                Enter the distance from axis<input type="text" id="Two4">
+                <button onclick="result4()">result</button>
+                <div id="text5"></div>
+
+            </details>
+            <details>
+                <summary>About a tangent Perpendicular to its plane</summary>
+                Enter the mass<input type="text" id="one5"> <br>
+                Enter the distance from axis<input type="text" id="Two5">
+                <button onclick="result5()">result</button>
+                <div id="text6"></div>
+
+            </details>
+
+        </details>
+        <details>
+            <summary>Disc</summary>
+            <details>
+                <summary>About Central Axis</summary>
+            Enter the mass<input type="text" id="one5"> <br>
+            Enter the distance from axis<input type="text" id="Two5">
+            <button onclick="result5()">result</button>
+            <div id="text6"></div>
+            </details>
+        </details>
+    </div>
+    </div>
+    <script>
+        function result() {
+            let a = document.getElementById('one').value
+            let b = document.getElementById('Two').value
+            let c = 0.4 * a * b * b;
+            document.getElementById('text1').innerHTML = "The Result is " + c
+        }
+        function result1() {
+            let a = document.getElementById('one1').value
+            let b = document.getElementById('Two1').value
+            let c = 1.4 * a * b * b;
+            document.getElementById('text2').innerHTML = "The Result is " + c
+
+        }
+        function result2() {
+            let a = document.getElementById('one2').value
+            let b = document.getElementById('Two2').value
+            let c = a * b * b;
+            document.getElementById('text3').innerHTML = "The Result is " + c
+        }
+        function result3() {
+            let a = document.getElementById('one3').value
+            let b = document.getElementById('Two3').value
+            let c = 0.5 * a * b * b;
+            document.getElementById('text4').innerHTML = "The Result is " + c
+        }
+        function result4() {
+            let a = document.getElementById('one4').value
+            let b = document.getElementById('Two4').value
+            let c = 1.5 * a * b * b;
+            document.getElementById('text5').innerHTML = "The Result is " + c
+        }
+        function result5() {
+            let a = document.getElementById('one5').value
+            let b = document.getElementById('Two5').value
+            let c = 2 * a * b * b;
+            document.getElementById('text6').innerHTML = "The Result is " + c
+        }
+        
+
+
+    </script>
+</body>
+
+</html>

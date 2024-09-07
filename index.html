@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <title>Physics Calculator</title>
+    <style>
+        .main div{
+            height: 40vh;
+            width: 40vh;
+            box-shadow: 10px 10px 10px grey;
+            margin-top: 20px;
+        }
+        .main div:hover{
+            height: 60vh;
+            width: 60vh;
+            transition: 0.5s;
+        }
+        .main{
+display: flex;
+flex-direction: column;
+/* width: 100%; */
+/* justify-content: space-around; */
+align-items:center;
+justify-content: space-around;
+
+
+        }
+        @media  screen and (max-width:738px) {
+            .main{
+                font-size: 80%;
+            }
+        }
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@keyframes anim1 {
+    from{
+        color: greenyellow;
+    }
+    to{
+        color: violet;
+    }
+}
+.box h2{
+    animation-name: anim1;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <!-- <img src="12.png" alt=""> -->
+            <h1>Physics Calculator</h1>
+        </div>
+        <ul>
+            <li class="nav-links">
+                <a href="#">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="intro">
+        
+    </div>
+    <div class="first">
+        
+    <div class="main">
+        <div class="box">
+            
+        <a href="mofinertia.html"><H1>CALCULATE THE MOMENT OF INERTIA OF DIFFRENT OBJECT</H1></a>
+        </div>
+        <div class="box">
+        <a href="voloume.html"><h1>CALCULATE THE VOLUME OF DIFFRENT OBJECT</h1></a></div>
+        <div class="box">
+        <a href="projectile.html"><h1>CALCULATE PROJECTILE</h1></a></div>
+        <div class="box">
+        <a href="force.html"><h1>CALCULATE FORCE</h1></a></div>
+        <div class="box">
+            <h2>NEW</h2>
+        <a href="power.html"><h1>CALCULATE POWER</h1></a></div>
+    </div>
+    </div>
+</body>
+</html>

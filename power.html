@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculate Power</title>
+    <style>
+        .main {
+            margin: 20% 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Physics Calculator</h1>
+        </div>
+        <ul>
+            <li class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="first">
+        <div class="main">
+            <h1>Calculate Power</h1>
+            <details>
+                <summary>Calculate Power by Workdone and Time : </summary>
+                Enter Workdone : <input type="text" id="one"> <br>
+                Enter Time : <input type="text" id="two">
+                <button onclick="result()">Result</button>
+                <div id="text"></div>
+
+            </details>
+            <details>
+                <summary>Calculate Power by Force and Velocity : </summary>
+                Enter Force : <input type="text" id="one1"> <br>
+                Enter Velocity : <input type="text" id="two1">
+                <button onclick="result1()">Result</button>
+                <div id="text1"></div>
+
+            </details>
+        </div>
+    </div>
+    <script>
+        function result() {
+            let a = document.getElementById('one').value;
+            let b = document.getElementById('two').value;
+            let c = a / b;
+            document.getElementById('text').innerHTML = "The Result is : " + c;
+        }
+        function result1() {
+            let a = document.getElementById('one1').value;
+            let b = document.getElementById('two1').value;
+            let c = a * b;
+            document.getElementById('text1').innerHTML = "The Result is : " + c;
+        }
+    </script>
+</body>
+
+</html>

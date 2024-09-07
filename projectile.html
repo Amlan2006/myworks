@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projectile</title>
+    <style>
+    .main{
+        margin-top: 15%;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><h1>Physics Calculator</h1></div>
+        <ul>
+            <li class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="first">
+    <div class="main">
+    <h1>CALCULATE :</h1> <br>
+    <details>
+        <summary>HEIGHT OF A PROJECTILE</summary>
+        <p>only works for specific angles : 18,30,37,45,54,60,72 and 90 degree</p>
+    Initial velocity : <input type="text" id="one"> <br>
+    Angle of projection : <input type="text" id="two">
+    <div id="text"></div>
+<button onclick="result()">Result</button>
+</details>
+</div>
+</div>
+    <script>
+function result(){
+    let a = document.getElementById('one').value;
+    let b = document.getElementById('two').value;
+    let c = 9.8;
+    if (b == 30) {
+        let d = ((a*a*0.5*0.5)/(9.8*2));
+        document.getElementById('text').innerHTML = "The result is : "+d;
+    }
+    if (b == 37) {
+        let d = ((a*a*0.6*0.6)/(9.8*2));
+        document.getElementById('text').innerHTML = "The result is : "+d;
+    }
+    if (b == 18) {
+        let d = ((a*a*0.31*0.31)/(9.8*2));
+        document.getElementById('text').innerHTML = "The result is : "+d;
+    }
+    if (b == 36) {
+        let d = ((a*a*0.587*0.587)/(9.8*2));
+        document.getElementById('text').innerHTML = "The result is : "+d;
+    }
+    if (b == 54) {
+        let d = ((a*a*0.81*0.81)/(9.8*2));
+        document.getElementById('text').innerHTML = "The result is : "+d;
+    }
+    if (b == 72) {
+        let d = ((a*a*0.951*0.951)/(9.8*2));
+        document.getElementById('text').innerHTML = "The result is : "+d;
+    }
+    if (b == 45) {
+        let d = ((a*a*0.7*0.7)/(9.8*2));
+        document.getElementById('text').innerHTML = "The result is : "+d;
+    }
+    if (b == 60) {
+        let d = ((a*a*0.866*0.866)/(9.8*2));
+        document.getElementById('text').innerHTML = "The result is : "+d;
+    }
+    if (b == 90) {
+        let d = ((a*a)/(9.8*2));
+        document.getElementById('text').innerHTML = "The result is : "+d;
+    }
+   
+}
+    </script>
+</body>
+</html>

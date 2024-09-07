@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FORCE</title>
+    <style>
+        .main{
+           padding: 20% 0;
+       }
+    </style>
+
+</head>
+<body>
+   
+    <nav>
+        <div class="logo"><h1>Physics Calculator</h1></div>
+        <ul>
+            <li class="nav-links">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="first">
+    <div class="main">
+        <h1>CALCULATE FORCE</h1>
+        <details>
+            <summary>By Mass And Acceleration</summary>
+Enter the mass : <input type="text" id="one"> <br>
+Enter the acceleration : <input type="text" id="two">
+<button onclick="result()">Result</button>
+<div id="text"></div>
+        </details>
+        <details>
+            <summary>By Workdone And Displacement</summary>
+Enter the Workdone : <input type="text" id="one1"> <br>
+Enter the Displacement : <input type="text" id="two1">
+<button onclick="result1()">Result</button>
+<div id="text1"></div>
+        </details>
+        <details>
+            <summary>By Power And Velocity</summary>
+Enter the Power : <input type="text" id="one2"> <br>
+Enter the Velocity : <input type="text" id="two2">
+<button onclick="result2()">Result</button>
+<div id="text2"></div>
+        </details>
+    </div>
+    </div>
+    <script>
+        function result(){
+        let a = document.getElementById('one').value;
+        let b = document.getElementById('two').value;
+        let c = a*b;
+document.getElementById('text').innerHTML="The result is : "+c;
+        }
+        function result1(){
+        let a = document.getElementById('one1').value;
+        let b = document.getElementById('two1').value;
+        let c = a/b;
+document.getElementById('text1').innerHTML="The result is : "+c;
+        }
+        function result2(){
+        let a = document.getElementById('one2').value;
+        let b = document.getElementById('two2').value;
+        let c = a/b;
+document.getElementById('text2').innerHTML="The result is : "+c;
+        }
+        </script>
+</body>
+</html>
